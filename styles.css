@@ -1,0 +1,12 @@
+body {
+  background-color: darkorange;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+}
