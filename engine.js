@@ -1,10 +1,12 @@
+// Web Audio API
+
 //for legacy browsers
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 
 const audioContext = new AudioContext();
 
 //get the audio element
-const audioElement = document.querySelection('audio');
+const audioElement = document.querySelector('audio');
 
 //pass it into the audio context
 const track = audioContext.createMediaElementSource(audioElement);
@@ -55,3 +57,5 @@ pannerControl.addEventListener('input', function() {
 }, false);
 
 track.connect(gainNode).connect(panner).connect(audioContext.destination);
+
+console.log(audioElement);

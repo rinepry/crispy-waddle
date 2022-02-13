@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <meta charset="UTF-8">
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
-  <script src="main.js"></script>
-  <title>KAD</title>
-</head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
+    <script src="./engine.js"></script>
+    <title>KAD</title>
+  </head>
+  <body>
+    <h1>Keldroid: Automated Drummer</h1>
+    <p>Hello! My name is {rinepry} and this is a project for an Artificial Intelligence Drum Machine.</p>
 
-<body>
-  <h1>Keldroid: Automated Drummer</h1>
-  <p>Hello! My name is {rinepry} and this is a project for an Artificial Intelligence Drum Machine.</p>
-
-  <audio src="bass_sample.mp3"></audio>
+    <audio src="./assets/bass_sample.mp3" type="audio"></audio>
 
   <button data-playing="false" roles="switch" aria-checked="false">
     <span>Play/Pause</span>
@@ -23,6 +23,5 @@
   <input type="range" id="volume" min="0" max="2" value="1" step="0.01">
 
   <input type="range" id="panner" min="-1" max="1" value="0" step="0.01">
-</body>
-
+  </body>
 </html>
